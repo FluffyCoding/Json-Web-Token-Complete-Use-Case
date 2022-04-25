@@ -1,5 +1,6 @@
 package com.unity.jwt.uc.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,6 +13,7 @@ import static java.util.Arrays.stream;
 public class UserPrincipal implements UserDetails {
 
     private final User user;
+
 
     public UserPrincipal(User user) {
         this.user = user;

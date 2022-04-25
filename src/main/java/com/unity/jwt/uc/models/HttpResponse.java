@@ -23,6 +23,7 @@ public class HttpResponse {
     private String message;
 
     public HttpResponse(int httpStatusCode, HttpStatus httpStatus, String reason, String message) {
+        this.timeStamp = new Date();
         this.httpStatusCode = httpStatusCode;
         this.httpStatus = httpStatus;
         this.reason = reason;

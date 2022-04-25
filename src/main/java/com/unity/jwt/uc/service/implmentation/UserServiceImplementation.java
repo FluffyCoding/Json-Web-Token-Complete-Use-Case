@@ -21,7 +21,6 @@ import java.util.Date;
 public class UserServiceImplementation implements UserService, UserDetailsService {
 
     private final Logger LOGGER = LoggerFactory.getLogger(getClass());
-
     private final UserRepository userRepository;
 
     public UserServiceImplementation(UserRepository userRepository) {
